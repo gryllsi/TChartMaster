@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    tools:context="com.totcy.chartmaster.MainActivity">
+
+    <com.totcy.tchartlibrary.charts.LineChartView
+        android:id="@+id/lineChart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:ChartLineWidth="1dp"
+        app:ChartPandding="5dp"
+        app:TextSize="10sp"
+        app:YscaleHeight="32dp"
+        />
+
+    <Switch
+        android:text="平滑曲线"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/switch1"
+        android:layout_below="@+id/lineChart"
+        android:switchMinWidth="60dp"
+        android:layout_marginTop="24dp"/>
+
+    <Switch
+        android:text="显示圆点"
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/switch1"
+        android:checked="true"
+        android:switchMinWidth="60dp"
+        android:id="@+id/switch2"/>
+
+    <Switch
+        android:text="显示数值"
+        android:layout_marginTop="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switch2"
+        android:layout_centerHorizontal="true"
+        android:switchMinWidth="60dp"
+        android:id="@+id/switch3"/>
+
+    <Button
+        android:text="设置数据"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switch3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:id="@+id/button"
+        android:onClick="onClick"
+        android:elevation="15dp"/>
+
+
+</RelativeLayout>

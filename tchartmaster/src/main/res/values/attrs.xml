@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TotcyChart">
+        <attr name="TextSize" format="dimension"/>
+        <attr name="YscaleHeight" format="dimension" />
+        <attr name="ChartPandding" format="dimension" />
+        <attr name="ChartLineWidth" format="dimension" />
+
+    </declare-styleable>
+
+</resources>
