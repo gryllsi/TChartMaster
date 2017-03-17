@@ -6,6 +6,9 @@
         <attr name="ChartPandding" format="dimension" />
         <attr name="ChartLineWidth" format="dimension" />
 
+        <!--条形图的宽度-->
+        <attr name="BarWidth" format="dimension" />
+
     </declare-styleable>
 
 </resources>
